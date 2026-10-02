@@ -11,6 +11,7 @@
 \usepackage[english,ngerman]{babel}
 \graphicspath{ {./images} }
 \usepackage{float,xcolor,csquotes,etoolbox}
+\usepackage[normalem]{ulem}  % für \sout (Durchstreichen)
 
 \usepackage{hyperref}
 \hypersetup{breaklinks,colorlinks,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black}
@@ -20,7 +21,6 @@
 
 \usepackage{tikz}
 \usetikzlibrary{babel}
-
 
 \usepackage[inkscapeformat=png,inkscapedpi=600]{svg}
 
@@ -35,10 +35,10 @@
     \hyperlink{unpuenktlich}{\beamergotobutton{Unpünktlich?}}
 }
 
-\title{Ersti-Begrüßung: Sommer Semester 26}
+\title{Ersti-Begrüßung: Sommersemester 27}
 \subtitle{IT Setup}
 \date{\today}
-\author{Max Trautwein}
+\author{Max Trautwein \and Silas Mack}
 \institute{Fachschaft IT}
 
 \begin{document}
@@ -50,9 +50,9 @@
   \tableofcontents[hideallsubsections] %
 \end{frame}
 
-\section{Anfordeungn}
+\section{Anforderungen}
 
-\begin{frame}{Anfordeungn} 
+\begin{frame}{Anforderungen} 
     \begin{itemize}
         \item HS Account
         \item Handy / Tablet (WLAN \& Mail)
@@ -62,7 +62,7 @@
 
 \section{WLAN}
 
-\begin{frame}{WLAN: 1. Login easyroam} 
+\begin{frame}{WLAN: 1. Login mit easyroam} 
     \begin{minipage} [t] {0.4\textwidth} 
       \qrcode[height=10em]{https://www.easyroam.de/}
         \\~\\~
@@ -84,7 +84,7 @@
     \end{tikzpicture}
 \end{frame}
 
-\begin{frame}{WLAN: 2. DL \& Setup}
+\begin{frame}{WLAN: 2. Download \& Setup}
 
     \begin{tikzpicture}[remember picture, overlay]
         \node at ([yshift=0cm,xshift=3.5cm]current page.west) {
@@ -140,7 +140,7 @@
         \centering
         \qrcode[height=10em]{https://intranetportal.hs-esslingen.de/meine-hochschule/hochschul-services/rechenzentrum/zugang-zum-hochschulnetz-mobile-net-netzlaufwerke}
     \end{figure}
-    \\~\\~
+    \vspace{1em}
 
     \large
     \urls{intranetportal.hs-esslingen.de/meine-hochschule/hochschul-services/rechenzentrum/zugang-zum-hochschulnetz-mobile-net-netzlaufwerke}
@@ -148,12 +148,12 @@
     % Wichtig alle schritte genau befolgen
 \end{frame}
 
-\begin{frame}{VPN: VCRUNTIME140.dll}
+\begin{frame}{VPN: Bekannte Treiberprobleme unter \protect\sout{Windoof} Windows}
     \begin{figure}
         \centering
         \qrcode[height=10em]{https://www.microsoft.com/en-us/download/details.aspx?id=52685}
     \end{figure}
-    \\~\\~
+    \vspace{1em}
 
     \large
     \textbf{vc\_redist.x64.exe}\\
@@ -162,7 +162,7 @@
     % Wichtig alle schritte genau befolgen
 \end{frame}
 
-\begin{frame}{VPN: VCRUNTIME140.dll}
+\begin{frame}{VPN: Bekannte Treiberprobleme unter \protect\sout{Windoof} Windows}
     
     \begin{itemize}
         \item Skript als Admin Ausführen
